@@ -1,6 +1,8 @@
 #! /usr/bin/python
 # coding:utf-8
 
+__all__ = ['CR_records']
+
 file_name = 'CallBranch.outwritecallret.out'
 path = './data/'
 subpath = 'test/'
@@ -23,6 +25,3 @@ class CR_records():
             for i in raw_data:
                 self.data.append(record(i))
 
-a = CR_records(path+subpath+file_name)
-for i in a.data:
-    print i.match

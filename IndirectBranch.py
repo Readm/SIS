@@ -1,13 +1,18 @@
 #! /usr/bin/python
 # coding:utf-8
 
+__all__ = ['IB_records']
+
 file_name = 'CallBranch.outwritebranchandcall.out'
 path = './data/'
 subpath = 'test/'
 
 class record():
     def __init__(self, lst):    # len(lst) == 3 str
-        ip, target, ins = lst[0].split('  ',2)
+        try:
+            ip, target, ins = lst[0].split('  ',2)
+        except:
+            print lst[0]
         ip = int(ip.split(':')[-1], 16)
         target = int(target.split(':')[-1], 16)
 
@@ -38,12 +43,5 @@ class IB_records():
                 self.data.append(record(raw_data[i*3:i*3+3]))
 
 
-
-a = IB_records(path+subpath+file_name)
-
-for i in a.data:
-    if i.ins.startswith('jmp') and 'rip' not in i.ins:
-        if i.distance>0xFFFF:
-            print i
 
 

@@ -1,6 +1,8 @@
 #! /usr/bin/python
 # coding:utf-8
 
+__all__ = ['SP_records']
+
 file_name = 'CallBranch.outwritespins.out'
 path = './data/'
 subpath = 'test/'
@@ -8,6 +10,8 @@ subpath = 'test/'
 class record():
     def __init__(self, s):
         self.ins = s.strip()
+        if s == 'pop rsp':
+            print "****************************"
 
     @property
     def ins_type(self):
@@ -25,14 +29,3 @@ class SP_records():
             for i in raw_data:
                 self.data.append(record(i))
 
-
-a = SP_records(path+subpath+file_name)
-
-import collections
-c = collections.Counter()
-c.update([i.ins_type for i in a.data])
-print c
-
-for i in a.data:
-    if i.ins_type=='mov':
-        print i.ins
