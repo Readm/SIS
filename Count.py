@@ -9,6 +9,7 @@ from script_tools import colorize
 import collections
 
 exception_info=[]
+pointer_jmp_list=[]
 
 class File_Report():
     CR_file_name = 'CallBranch.outwritecallret.out'
@@ -39,7 +40,10 @@ class File_Report():
         self.exception_count = 0
         for i in self.ib.data:
             if i.ins.startswith('jmp') and 'rip' not in i.ins:
-                if i.distance>0xFFFF:
+                #if '[' in i.ins:
+                #    print colorize(i.ins, 'red')
+                #    pointer_jmp_list.append((i.ins, i.target))
+                if i.distance>0x4000:
                     self.exception_count +=1
                     exception_info.append(i.__str__())
 
@@ -103,3 +107,6 @@ class Report():
 
 a = Report('./data/OutFile')
 a.run()
+print len(pointer_jmp_list)
+for i in set(pointer_jmp_list):
+    print i
