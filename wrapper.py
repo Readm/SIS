@@ -6,10 +6,13 @@ import Dynamic
 if __name__ == '__main__':
     import sys,os
     cmd = sys.argv[1]
-    cmd = 'qemu-x86_64 /bin/'+cmd+' 2>error.txt'
+    log_name = './log/'+cmd.replace(' ','_')+'.txt'
+    cmd = 'qemu-x86_64 /bin/'+cmd+' 2>'+log_name
     print cmd
     os.system(cmd)
     print 'Error Log:'
-    os.system('cat error.txt')
+    os.system('cat '+log_name)
     print "Count result:"
-    Dynamic.count('./error.txt')
+    ans = Dynamic.count(log_name)
+    count_txt = sys.argv[1].replace(' ','_')+' '+' '.join(['%d'%i for i in ans])
+    os.system('echo "' +count_txt+'">>ans.txt')
