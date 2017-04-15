@@ -110,9 +110,9 @@ def count(f):
                 I_SP_num += 1
                 I_SP_set.add(line.split()[1])
 
-    print 'INR: %d INM: %d I_SP: %d' %(INR_num,INM_num,I_SP_num)
-    print 'INR_S/D %d/%d, INM_S/D %d/%d, I_SP_set %d' % (len(INR_src), len(INR_dst), len(INM_src), len(INM_dst), len(I_SP_set))
-    print 'max count %d, max inr count %d, max inm count %d' % (max_win_count, max_inr_win_count, max_inm_win_count)
+    print 'INR: %d INM: %d I_SP: %d' %(INR_num,INM_num,I_SP_num),
+    print 'INR_S/D %d/%d, INM_S/D %d/%d, I_SP_set %d' % (len(INR_src), len(INR_dst), len(INM_src), len(INM_dst), len(I_SP_set)),
+    print 'max count %d, max inr count %d, max inm count %d' % (max_win_count, max_inr_win_count, max_inm_win_count),
     print "Total ins: %d." % (total_num)
     return (INR_num, INM_num, I_SP_num, len(INR_src), len(INR_dst), len(INM_src), len(INM_dst), len(I_SP_set),max_win_count, max_inr_win_count, max_inm_win_count,window,total_num)
 
