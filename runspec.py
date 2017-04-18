@@ -31,7 +31,7 @@ build_path = [i+'build_base_sis.0000'  for i in case_path]
 #    os.system('')
 #    print path
 #
-run_path = [i+'run_base_ref_sis.0000' for i in case_path]
+run_path = [i+'run_base_test_sis.0000' for i in case_path]
 
 for path in run_path:
     try:

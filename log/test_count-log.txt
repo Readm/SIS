@@ -1,0 +1,52 @@
+../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib attrs.pl > attrs.out 2>> attrs.err
+INR: 1785 INM: 0 I_SP: 0 INR_S/D 9/72, INM_S/D 0/0, I_SP_set 0 max count 4, max inr count 4, max inm count 0 Total ins: 2584941.
+../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib gv.pl > gv.out 2>> gv.err
+INR: 1284 INM: 0 I_SP: 0 INR_S/D 8/65, INM_S/D 0/0, I_SP_set 0 max count 4, max inr count 4, max inm count 0 Total ins: 1686112.
+../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib makerand.pl > makerand.out 2>> makerand.err
+INR: 52 INM: 0 I_SP: 0 INR_S/D 5/41, INM_S/D 0/0, I_SP_set 0 max count 3, max inr count 3, max inm count 0 Total ins: 115966462.
+../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib pack.pl > pack.out 2>> pack.err
+INR: 12378 INM: 0 I_SP: 0 INR_S/D 10/96, INM_S/D 0/0, I_SP_set 0 max count 5, max inr count 5, max inm count 0 Total ins: 59258059.
+../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib redef.pl > redef.out 2>> redef.err
+INR: 230 INM: 0 I_SP: 0 INR_S/D 6/46, INM_S/D 0/0, I_SP_set 0 max count 2, max inr count 2, max inm count 0 Total ins: 536113.
+../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib ref.pl > ref.out 2>> ref.err
+INR: 632 INM: 0 I_SP: 0 INR_S/D 8/56, INM_S/D 0/0, I_SP_set 0 max count 4, max inr count 4, max inm count 0 Total ins: 880064.
+../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib regmesg.pl > regmesg.out 2>> regmesg.err
+INR: 817 INM: 0 I_SP: 0 INR_S/D 7/65, INM_S/D 0/0, I_SP_set 0 max count 3, max inr count 3, max inm count 0 Total ins: 1501853.
+../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib test.pl > test.out 2>> test.err
+INR: 802 INM: 0 I_SP: 0 INR_S/D 8/53, INM_S/D 0/0, I_SP_set 0 max count 4, max inr count 4, max inm count 0 Total ins: 41433533.
+../run_base_test_sis.0000/bzip2_base.sis input.program 5 > input.program.out 2>> input.program.err
+INR: 12 INM: 0 I_SP: 0 INR_S/D 2/12, INM_S/D 0/0, I_SP_set 0 max count 1, max inr count 1, max inm count 0 Total ins: 938327600.
+../run_base_test_sis.0000/bzip2_base.sis dryer.jpg 2 > dryer.jpg.out 2>> dryer.jpg.err
+INR: 12 INM: 0 I_SP: 0 INR_S/D 2/12, INM_S/D 0/0, I_SP_set 0 max count 1, max inr count 1, max inm count 0 Total ins: 676535573.
+../run_base_test_sis.0000/gcc_base.sis cccp.i -o cccp.s > cccp.out 2>> cccp.err
+INR: 395230 INM: 0 I_SP: 0 INR_S/D 10/159, INM_S/D 0/0, I_SP_set 0 max count 16, max inr count 16, max inm count 0 Total ins: 889107007.
+../run_base_test_sis.0000/mcf_base.sis inp.in > inp.out 2>> inp.err
+INR: 16 INM: 0 I_SP: 0 INR_S/D 2/16, INM_S/D 0/0, I_SP_set 0 max count 1, max inr count 1, max inm count 0 Total ins: 359544068.
+../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < capture.tst > capture.out 2>> capture.err
+INR: 24 INM: 0 I_SP: 0 INR_S/D 2/24, INM_S/D 0/0, I_SP_set 0 max count 1, max inr count 1, max inm count 0 Total ins: 517692.
+../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < connect.tst > connect.out 2>> connect.err
+INR: 25 INM: 0 I_SP: 0 INR_S/D 2/25, INM_S/D 0/0, I_SP_set 0 max count 1, max inr count 1, max inm count 0 Total ins: 333066.
+../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < connect_rot.tst > connect_rot.out 2>> connect_rot.err
+INR: 24 INM: 0 I_SP: 0 INR_S/D 2/24, INM_S/D 0/0, I_SP_set 0 max count 1, max inr count 1, max inm count 0 Total ins: 206594.
+../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < connection.tst > connection.out 2>> connection.err
+INR: 29 INM: 0 I_SP: 0 INR_S/D 2/29, INM_S/D 0/0, I_SP_set 0 max count 1, max inr count 1, max inm count 0 Total ins: 581886578.
+../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < connection_rot.tst > connection_rot.out 2>> connection_rot.err
+INR: 27 INM: 0 I_SP: 0 INR_S/D 2/27, INM_S/D 0/0, I_SP_set 0 max count 1, max inr count 1, max inm count 0 Total ins: 7120038.
+../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < cutstone.tst > cutstone.out 2>> cutstone.err
+INR: 25 INM: 0 I_SP: 0 INR_S/D 2/25, INM_S/D 0/0, I_SP_set 0 max count 1, max inr count 1, max inm count 0 Total ins: 122834.
+../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < dniwog.tst > dniwog.out 2>> dniwog.err
+INR: 30 INM: 0 I_SP: 0 INR_S/D 2/30, INM_S/D 0/0, I_SP_set 0 max count 1, max inr count 1, max inm count 0 Total ins: 96648370.
+../run_base_test_sis.0000/hmmer_base.sis --fixed 0 --mean 325 --num 45000 --sd 200 --seed 0 bombesin.hmm > bombesin.out 2>> bombesin.err
+INR: 41 INM: 0 I_SP: 0 INR_S/D 3/35, INM_S/D 0/0, I_SP_set 0 max count 2, max inr count 2, max inm count 0 Total ins: 995804205.
+../run_base_test_sis.0000/sjeng_base.sis test.txt > test.out 2>> test.err
+INR: 19 INM: 0 I_SP: 0 INR_S/D 2/19, INM_S/D 0/0, I_SP_set 0 max count 1, max inr count 1, max inm count 0 Total ins: -762127513.
+../run_base_test_sis.0000/libquantum_base.sis 33 5 > test.out 2>> test.err
+INR: 12 INM: 0 I_SP: 0 INR_S/D 2/12, INM_S/D 0/0, I_SP_set 0 max count 1, max inr count 1, max inm count 0 Total ins: 4253638.
+../run_base_test_sis.0000/h264ref_base.sis -d foreman_test_encoder_baseline.cfg > foreman_test_baseline_encodelog.out 2>> foreman_test_baseline_encodelog.err
+INR: 38 INM: 0 I_SP: 0 INR_S/D 3/36, INM_S/D 0/0, I_SP_set 0 max count 3, max inr count 3, max inm count 0 Total ins: 1352307166.
+../run_base_test_sis.0000/omnetpp_base.sis omnetpp.ini > omnetpp.log 2>> omnetpp.err
+INR: 156 INM: 0 I_SP: 0 INR_S/D 4/147, INM_S/D 0/0, I_SP_set 0 max count 3, max inr count 3, max inm count 0 Total ins: 1031586249.
+../run_base_test_sis.0000/astar_base.sis lake.cfg > lake.out 2>> lake.err
+INR: 32 INM: 0 I_SP: 0 INR_S/D 2/28, INM_S/D 0/0, I_SP_set 0 max count 2, max inr count 2, max inm count 0 Total ins: -2926887870.
+../run_base_test_sis.0000/Xalan_base.sis -v test.xml xalanc.xsl > test.out 2>> test.err
+INR: 134 INM: 0 I_SP: 0 INR_S/D 2/125, INM_S/D 0/0, I_SP_set 0 max count 2, max inr count 2, max inm count 0 Total ins: 752849379.

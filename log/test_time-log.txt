@@ -1,0 +1,52 @@
+qemu-x86_64 ../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib attrs.pl > attrs.out 2> attrs.err
+time: 0.17138004303
+qemu-x86_64 ../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib gv.pl > gv.out 2> gv.err
+time: 0.107352018356
+qemu-x86_64 ../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib makerand.pl > makerand.out 2> makerand.err
+time: 0.947641849518
+qemu-x86_64 ../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib pack.pl > pack.out 2> pack.err
+time: 0.869611978531
+qemu-x86_64 ../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib redef.pl > redef.out 2> redef.err
+time: 0.089213848114
+qemu-x86_64 ../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib ref.pl > ref.out 2> ref.err
+time: 0.0864479541779
+qemu-x86_64 ../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib regmesg.pl > regmesg.out 2> regmesg.err
+time: 0.109889030457
+qemu-x86_64 ../run_base_test_sis.0000/perlbench_base.sis -I. -I./lib test.pl > test.out 2> test.err
+time: 10.5604610443
+qemu-x86_64 ../run_base_test_sis.0000/bzip2_base.sis input.program 5 > input.program.out 2> input.program.err
+time: 12.4153029919
+qemu-x86_64 ../run_base_test_sis.0000/bzip2_base.sis dryer.jpg 2 > dryer.jpg.out 2> dryer.jpg.err
+time: 23.9075069427
+qemu-x86_64 ../run_base_test_sis.0000/gcc_base.sis cccp.i -o cccp.s > cccp.out 2> cccp.err
+time: 13.5873019695
+qemu-x86_64 ../run_base_test_sis.0000/mcf_base.sis inp.in > inp.out 2> inp.err
+time: 9.48350000381
+qemu-x86_64 ../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < capture.tst > capture.out 2> capture.err
+time: 0.569384098053
+qemu-x86_64 ../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < connect.tst > connect.out 2> connect.err
+time: 6.06323504448
+qemu-x86_64 ../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < connect_rot.tst > connect_rot.out 2> connect_rot.err
+time: 0.286273002625
+qemu-x86_64 ../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < connection.tst > connection.out 2> connection.err
+time: 29.9686620235
+qemu-x86_64 ../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < connection_rot.tst > connection_rot.out 2> connection_rot.err
+time: 0.326450109482
+qemu-x86_64 ../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < cutstone.tst > cutstone.out 2> cutstone.err
+time: 1.51823806763
+qemu-x86_64 ../run_base_test_sis.0000/gobmk_base.sis --quiet --mode gtp < dniwog.tst > dniwog.out 2> dniwog.err
+time: 79.3308889866
+qemu-x86_64 ../run_base_test_sis.0000/hmmer_base.sis --fixed 0 --mean 325 --num 45000 --sd 200 --seed 0 bombesin.hmm > bombesin.out 2> bombesin.err
+time: 32.7654428482
+qemu-x86_64 ../run_base_test_sis.0000/sjeng_base.sis test.txt > test.out 2> test.err
+time: 32.5343568325
+qemu-x86_64 ../run_base_test_sis.0000/libquantum_base.sis 33 5 > test.out 2> test.err
+time: 0.366524934769
+qemu-x86_64 ../run_base_test_sis.0000/h264ref_base.sis -d foreman_test_encoder_baseline.cfg > foreman_test_baseline_encodelog.out 2> foreman_test_baseline_encodelog.err
+time: 205.535115004
+qemu-x86_64 ../run_base_test_sis.0000/omnetpp_base.sis omnetpp.ini > omnetpp.log 2> omnetpp.err
+time: 14.1645691395
+qemu-x86_64 ../run_base_test_sis.0000/astar_base.sis lake.cfg > lake.out 2> lake.err
+time: 86.4947719574
+qemu-x86_64 ../run_base_test_sis.0000/Xalan_base.sis -v test.xml xalanc.xsl > test.out 2> test.err
+time: 7.81966280937
