@@ -45,12 +45,12 @@ def count(f):
             if line.startswith('INR'):
                 lst_dis = int(line.split()[-1])
                 jmp_dis = int(line.split()[6],16)
-                if jmp_dis<dis:
-                    hide_dist+=lst_dis
-                    continue
-                else:
-                    lst_dis+=hide_dist
-                    hide_dist = 0
+                #if jmp_dis<dis:
+                #    hide_dist+=lst_dis
+                #    continue
+                #else:
+                #    lst_dis+=hide_dist
+                #    hide_dist = 0
 
                 INR_num += 1
                 INR_src.add(line.split()[4])
@@ -75,12 +75,12 @@ def count(f):
             elif line.startswith('INM'):
                 lst_dis = int(line.split()[-1])
                 jmp_dis = int(line.split()[6],16)
-                if jmp_dis<dis:
-                    hide_dist+=lst_dis
-                    continue
-                else:
-                    lst_dis+=hide_dist
-                    hide_dist = 0
+                #if jmp_dis<dis:
+                #    hide_dist+=lst_dis
+                #    continue
+                #else:
+                #    lst_dis+=hide_dist
+                #    hide_dist = 0
 
                 INM_num += 1
                 INM_src.add(line.split()[4])
@@ -88,12 +88,12 @@ def count(f):
 
                 total_num += lst_dis
 
-                if lst_dis<dis:
-                    hide_dist+=lst_dis
-                    continue
-                else:
-                    lst_dis+=hide_dist
-                    hide_dist = 0
+                #if lst_dis<dis:
+                #    hide_dist+=lst_dis
+                #    continue
+                #else:
+                #    lst_dis+=hide_dist
+                #    hide_dist = 0
 
                 win_count =  num_in_win(lst_dis,win_lst)
                 max_win_count = max(max_win_count, win_count)

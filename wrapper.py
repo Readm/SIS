@@ -15,4 +15,5 @@ if __name__ == '__main__':
     print "Count result:"
     ans = Dynamic.count(log_name)
     count_txt = sys.argv[1].replace(' ','_')+' '+' '.join(['%d'%i for i in ans])
-    os.system('echo "' +count_txt+'">>ans.txt')
+    if not raw_input('Save?(Y/n)').startswith('n'):
+        os.system('echo "' +count_txt+'">>ans.txt')

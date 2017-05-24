@@ -3,7 +3,6 @@
 
 from capstone import *
 import pwnlib
-import elftools
 
 def jmp_filter(op_str):
     if 'rip' in op_str:
